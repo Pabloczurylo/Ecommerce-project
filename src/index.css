@@ -12,6 +12,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nav-link-custom {
+  position: relative; /* Necesario para posicionar la línea debajo */
+  padding-bottom: 5px !important; /* Ajusta el espacio debajo del texto */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Empieza con ancho cero */
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e53935; /* Un color de acento, puedes usar el rojo del diseño */
+  transition: width 0.3s ease-in-out; /* Transición suave para el ancho */
+}
+.nav-link-custom:hover {
+  color: #e53935 !important; /* Cambia el color del texto al hacer hover */
+}
+
+.nav-link-custom:hover::after {
+  width: 100%; /* La línea se extiende completamente */
+}
 
 a {
   font-weight: 500;

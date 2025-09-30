@@ -27,11 +27,11 @@ const NavbarComponent = () => {
           {/* 2. Links Principales */}
           {/* Usamos 'me-auto' para que esta sección de enlaces ocupe el espacio disponible y empuje los iconos a la derecha */}
           <Nav className="me-auto mb-2 mb-lg-0">
-            <Nav.Link as={Link} to="/" className="text-dark px-3 fw-medium">Home</Nav.Link>
-            <Nav.Link as={Link} to="/shop" className="text-dark px-3 fw-medium">Shop</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="text-dark px-3 fw-medium">About Us</Nav.Link>
-            <Nav.Link as={Link} to="/blog" className="text-dark px-3 fw-medium">Blog</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="text-dark px-3 fw-medium">Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="/" className="text-dark px-3 fw-medium nav-link-custom">Home</Nav.Link>
+            <Nav.Link as={Link} to="/shop" className="text-dark px-3 fw-medium nav-link-custom">Shop</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="text-dark px-3 fw-medium nav-link-custom">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/blog" className="text-dark px-3 fw-medium nav-link-custom">Blog</Nav.Link>
+            <Nav.Link as={Link} to="/contact" className="text-dark px-3 fw-medium nav-link-custom">Contact Us</Nav.Link>
           </Nav>
 
           {/* 3. Iconos de Utilidad (login y búsqueda/carrito) */}
