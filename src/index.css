@@ -77,23 +77,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.banner-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banner-image {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  border-radius: 1rem; /* Bordes redondeados suaves */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.banner-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
